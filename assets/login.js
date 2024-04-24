@@ -50,6 +50,7 @@ fetch(full_url)
         let indice = searchUser(inputEmail);
         console.log(data.table.rows[indice].c[1]);
         if(validado && encontrado && data.table.rows[indice].c[1].v == inputPassowrd && data.table.rows[indice].c[0].v == inputUsername){
+            localStorage.setItem('inputUsername', JSON.stringify(inputUsername));
             window.location.href = "index.html";
             document.getElementById("btn-send").style.visibility = "hidden";
         } else if (!validado && encontrado && data.table.rows[indice].c[0].v == inputUsername) {
@@ -60,8 +61,6 @@ fetch(full_url)
             document.getElementById("btn-send").style.visibility = "visible";
             paragarph.innerHTML = " ";
         }
-        
-        
 
         document.getElementById("msg").appendChild(paragarph);
         
