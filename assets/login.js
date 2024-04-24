@@ -50,7 +50,7 @@ fetch(full_url)
         let indice = searchUser(inputEmail);
         if(validado && encontrado && data.table.rows[indice].c[1].v == inputPassowrd && data.table.rows[indice].c[0].v == inputUsername){
             localStorage.setItem('inputUsername', JSON.stringify(inputUsername));
-            window.location.href = "index.html";
+            window.location.href = "dashboard.html";
             document.getElementById("btn-send").style.visibility = "hidden";
         } else if (!validado && encontrado && data.table.rows[indice].c[0].v == inputUsername) {
             paragarph.innerHTML = "Conta não validada!";

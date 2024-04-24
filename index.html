@@ -2,28 +2,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Document</title>
 </head>
-<body id="body-id">
-    <container id="lateral-bar">
-        <div id="bater-ponto">
-            Bater ponto
-            <br>
-            <a href="https://8itodevm.github.io/WorkTimer/">Sistema de pontos</a>
-        </div>
+<body>
+    <div class="container-login">
+        <form class="login-form" action="https://script.google.com/macros/s/AKfycbxhNhhYIMB357rpDGL0ecU-cZL71wcxbsR7zS8kCy_kaYY5SSoOVMrb13jsBfxjQEBFmA/exec" method="post">
+            Log in
 
-        <div id="calcular-salario">
-            Calcular salário
             <br>
-            <a href="https://8itodevm.github.io/sistemasalario/">Sistema de calculo</a>
-        </div>
 
-        <div id="geren-usuarios">
-            Gerenciamento de usuários
+            Se você já tiver uma conta validada, não há a nescesidade de clicar em enviar!
+
             <br>
-            <a href="">Gerenciar usuários</a>
-        </div>
-    </container>
+
+            <div id="msg">
+
+            </div>
+
+            <input class="input-username" id="input-username" type="text" name="username" placeholder="Nome completo">
+            
+            <input class="input-email" id="input-email" type="text" name="email" placeholder="E-mail">
+            
+            <input class="input-password" id="input-password" type="password" name="pass" placeholder="Password">
+
+            <input class="input-position" id="input-position" type="text" name="pos" placeholder="Position">
+
+            <input type="submit" id="btn-send" class="login100-form-btn">
+            Login
+
+            <a class="forgot-password" href="#">
+            Forgot Password?
+            </a>
+
+        </form>
+    </div>
 </body>
-<script src="assets/main.js"></script>
+<script src="assets/login.js"></script>
 </html>
+
