@@ -2,7 +2,7 @@ let sheet_id = '1ZwW_YxYYhnL0nmk5vDioA6UEXOIbkq2XbEAghRY-9Zk';
 let sheet_title = 'LoginDashboard';
 let sheet_range = 'A1:G1000';
 
-let full_url = 'https://docs.google.com/spreadsheets/d/' + sheet_id + '/givz_id/tq?sheet=' + sheet_title + "&range=" + sheet_range;
+let full_url = 'https://docs.google.com/spreadsheets/d/' + sheet_id + '/givz/tq?sheet=' + sheet_title + '&range=' + sheet_range;
 
 let inputUsername = JSON.parse(localStorage.getItem('inputUsername'));
 
