@@ -34,7 +34,7 @@ fetch(full_url)
             document.getElementById("calcular-salario").style.visibility = 'hidden';
             document.getElementById("geren-usuarios").style.visibility = 'hidden';
         }
-        if (priorityLevel == 5){
+        if (priorityLevel == null){
             document.getElementById("body-id").style.visibility = "hidden";
         }
     }
