@@ -30,7 +30,7 @@ fetch(full_url)
     }
 
     function hideOptionsBasedOnPriorityLevel(priorityLevel){
-        if(priorityLevel > 1){
+        if(priorityLevel > 1 && priorityLevel <= 4){
             document.getElementById("calcular-salario").style.visibility = 'hidden';
             document.getElementById("geren-usuarios").style.visibility = 'hidden';
         }
