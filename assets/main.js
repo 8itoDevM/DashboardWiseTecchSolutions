@@ -26,13 +26,16 @@ fetch(full_url)
                 return data.table.rows[i].c[4].v;
             }
         }
-        return console.log("Não encontrado");
+        return 5;
     }
 
     function hideOptionsBasedOnPriorityLevel(priorityLevel){
         if(priorityLevel > 1){
             document.getElementById("calcular-salario").style.visibility = 'hidden';
             document.getElementById("geren-usuarios").style.visibility = 'hidden';
+        }
+        if (priorityLevel == 5){
+            document.getElementById("body-id").style.visibility = "hidden";
         }
     }
 

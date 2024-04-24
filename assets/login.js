@@ -48,7 +48,6 @@ fetch(full_url)
         let inputPosition = document.getElementById('input-position').value;
 
         let indice = searchUser(inputEmail);
-        console.log(data.table.rows[indice].c[1]);
         if(validado && encontrado && data.table.rows[indice].c[1].v == inputPassowrd && data.table.rows[indice].c[0].v == inputUsername){
             localStorage.setItem('inputUsername', JSON.stringify(inputUsername));
             window.location.href = "index.html";
